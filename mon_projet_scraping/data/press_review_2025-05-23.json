@@ -1,0 +1,202 @@
+[
+  {
+    "cluster_id": 1,
+    "topic": "Benyamin Nétanyahou nomme David Zini à la tête du Shin Bet, malgré l’opposition de la procureure générale",
+    "sources": [
+      "Le Monde"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Monde: Benyamin Nétanyahou nomme David Zini à la tête du Shin Bet, malgré l’opposition de la procureure générale"
+  },
+  {
+    "cluster_id": 2,
+    "topic": "Félix Lebrun éliminé en huitièmes de finale des Mondiaux de tennis de table",
+    "sources": [
+      "Le Monde"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Monde: Félix Lebrun éliminé en huitièmes de finale des Mondiaux de tennis de table"
+  },
+  {
+    "cluster_id": 3,
+    "topic": "L’administration Trump retire à l’université Harvard le droit d’accueillir des étudiants étrangers, et demande le transfert des milliers d’élèves actuellement concernés",
+    "sources": [
+      "Le Monde"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Monde: L’administration Trump retire à l’université Harvard le droit d’accueillir des étudiants étrangers, et demande le transfert des milliers d’élèves actuellement concernés"
+  },
+  {
+    "cluster_id": 4,
+    "topic": "La RATP va augmenter le montant de ses amendes à compter du 2 juin",
+    "sources": [
+      "Le Monde"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Monde: La RATP va augmenter le montant de ses amendes à compter du 2 juin"
+  },
+  {
+    "cluster_id": 5,
+    "topic": "En direct, guerre en Ukraine : l’armée russe crée une « zone tampon de sécurité » à la frontière ukrainienne, annonce Vladimir Poutine",
+    "sources": [
+      "Le Monde"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Monde: En direct, guerre en Ukraine : l’armée russe crée une « zone tampon de sécurité » à la frontière ukrainienne, annonce Vladimir Poutine"
+  },
+  {
+    "cluster_id": 6,
+    "topic": "Pédocriminalité : un réseau démantelé dans toute la France et 55 hommes interpellés",
+    "sources": [
+      "France Info"
+    ],
+    "review": "Résumé test pour 1 articles :\n- France Info: Pédocriminalité : un réseau démantelé dans toute la France et 55 hommes interpellés"
+  },
+  {
+    "cluster_id": 7,
+    "topic": "Mobilisation des taxis : une réunion prévue samedi au ministère des Transports, en présence des représentants de la profession",
+    "sources": [
+      "France Info"
+    ],
+    "review": "Résumé test pour 1 articles :\n- France Info: Mobilisation des taxis : une réunion prévue samedi au ministère des Transports, en présence des représentants de la profession"
+  },
+  {
+    "cluster_id": 8,
+    "topic": "Affaire Bétharram : Elisabeth Borne promet 1 000 contrôles dans l'enseignement privé sous contrat en 2025",
+    "sources": [
+      "France Info"
+    ],
+    "review": "Résumé test pour 1 articles :\n- France Info: Affaire Bétharram : Elisabeth Borne promet 1 000 contrôles dans l'enseignement privé sous contrat en 2025"
+  },
+  {
+    "cluster_id": 9,
+    "topic": "Festival de Cannes 2025. Pierre Richard ovationné, Cédric Klapisch enfin sélectionné, Alex Lutz bouleversé... Ce qu'il faut retenir de ce 22 mai",
+    "sources": [
+      "France Info"
+    ],
+    "review": "Résumé test pour 1 articles :\n- France Info: Festival de Cannes 2025. Pierre Richard ovationné, Cédric Klapisch enfin sélectionné, Alex Lutz bouleversé... Ce qu'il faut retenir de ce 22 mai"
+  },
+  {
+    "cluster_id": 10,
+    "topic": "Coupes, hausse du budget de l'armée, baisse des impôts... Ce que contient le mégaprojet budgétaire de Donald Trump que la Chambre des représentants vient d'adopter",
+    "sources": [
+      "France Info"
+    ],
+    "review": "Résumé test pour 1 articles :\n- France Info: Coupes, hausse du budget de l'armée, baisse des impôts... Ce que contient le mégaprojet budgétaire de Donald Trump que la Chambre des représentants vient d'adopter"
+  },
+  {
+    "cluster_id": 11,
+    "topic": "Guerre en Ukraine : la grande désillusion des Européens leurrés par Donald Trump",
+    "sources": [
+      "Le Figaro"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Figaro: Guerre en Ukraine : la grande désillusion des Européens leurrés par Donald Trump"
+  },
+  {
+    "cluster_id": 12,
+    "topic": "Guerre en Ukraine : la Russie va mettre en place une zone tampon à la frontière ukrainienne",
+    "sources": [
+      "Le Figaro"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Figaro: Guerre en Ukraine : la Russie va mettre en place une zone tampon à la frontière ukrainienne"
+  },
+  {
+    "cluster_id": 13,
+    "topic": "Encore cliente de ses engrais, l’Europe sanctionne la Russie par des droits de douane",
+    "sources": [
+      "Le Figaro"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Figaro: Encore cliente de ses engrais, l’Europe sanctionne la Russie par des droits de douane"
+  },
+  {
+    "cluster_id": 14,
+    "topic": "Un ambulancier, un professeur, un internaute de Coco... Derrière l’opération «Mario», l’ombre d’un réseau pédocriminel de «bons pères de famille»",
+    "sources": [
+      "Le Figaro"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Figaro: Un ambulancier, un professeur, un internaute de Coco... Derrière l’opération «Mario», l’ombre d’un réseau pédocriminel de «bons pères de famille»"
+  },
+  {
+    "cluster_id": 15,
+    "topic": "L’administration Trump retire à l’université Harvard le droit d’accueillir des étudiants étrangers",
+    "sources": [
+      "Le Figaro"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Le Figaro: L’administration Trump retire à l’université Harvard le droit d’accueillir des étudiants étrangers"
+  },
+  {
+    "cluster_id": 16,
+    "topic": "En Israël, accusations tous azimuts après le meurtre de deux agents diplomatiques à Washington",
+    "sources": [
+      "Libération"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Libération: En Israël, accusations tous azimuts après le meurtre de deux agents diplomatiques à Washington"
+  },
+  {
+    "cluster_id": 17,
+    "topic": "«Aucun endroit sûr» : à Gaza, des morts par dizaines au milieu du naufrage humanitaire",
+    "sources": [
+      "Libération"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Libération: «Aucun endroit sûr» : à Gaza, des morts par dizaines au milieu du naufrage humanitaire"
+  },
+  {
+    "cluster_id": 18,
+    "topic": "Interdiction du voile pour les petites filles dans l’espace public : mais où va Gabriel Attal ?",
+    "sources": [
+      "Libération"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Libération: Interdiction du voile pour les petites filles dans l’espace public : mais où va Gabriel Attal ?"
+  },
+  {
+    "cluster_id": 19,
+    "topic": "Les Républicains : Bruno Retailleau modèle une équipe dirigeante à sa main",
+    "sources": [
+      "Libération"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Libération: Les Républicains : Bruno Retailleau modèle une équipe dirigeante à sa main"
+  },
+  {
+    "cluster_id": 20,
+    "topic": "Procès Le Scouarnec : «Ce dossier est celui de la perversion chimiquement pure»",
+    "sources": [
+      "Libération"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Libération: Procès Le Scouarnec : «Ce dossier est celui de la perversion chimiquement pure»"
+  },
+  {
+    "cluster_id": 21,
+    "topic": "Sébastien Laye : CBD, substituts nicotiniques… la folie bureaucratique d’un État en roue libre",
+    "sources": [
+      "Valeurs Actuelles"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Valeurs Actuelles: Sébastien Laye : CBD, substituts nicotiniques… la folie bureaucratique d’un État en roue libre"
+  },
+  {
+    "cluster_id": 22,
+    "topic": "Omar Sy accusé d’avoir menacé de mort des agents SNCF",
+    "sources": [
+      "Valeurs Actuelles"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Valeurs Actuelles: Omar Sy accusé d’avoir menacé de mort des agents SNCF"
+  },
+  {
+    "cluster_id": 23,
+    "topic": "Livre : « Le Perroquet de Flaubert », de Julian Barnes",
+    "sources": [
+      "Valeurs Actuelles"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Valeurs Actuelles: Livre : « Le Perroquet de Flaubert », de Julian Barnes"
+  },
+  {
+    "cluster_id": 24,
+    "topic": "« Free Palestine » : le tweet problématique du député LFI Thomas Portes après l’attaque antisémite de Washington",
+    "sources": [
+      "Valeurs Actuelles"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Valeurs Actuelles: « Free Palestine » : le tweet problématique du député LFI Thomas Portes après l’attaque antisémite de Washington"
+  },
+  {
+    "cluster_id": 25,
+    "topic": "Législatives au Portugal : Avec la montée de la droite dure, la fin d’une exception politique en Europe",
+    "sources": [
+      "Valeurs Actuelles"
+    ],
+    "review": "Résumé test pour 1 articles :\n- Valeurs Actuelles: Législatives au Portugal : Avec la montée de la droite dure, la fin d’une exception politique en Europe"
+  }
+]
