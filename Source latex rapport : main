@@ -1,0 +1,220 @@
+\documentclass[a4paper, 12pt, twoside]{article}
+\usepackage[utf8]{inputenc}		
+\usepackage[T1]{fontenc}		
+\usepackage[francais]{babel}
+\usepackage{lmodern}
+\usepackage{ae,aecompl}
+\usepackage[top=2.5cm, bottom=2cm, 
+			left=3cm, right=2.5cm,
+			headheight=15pt]{geometry}
+\usepackage{graphicx}
+\usepackage{eso-pic}	
+\usepackage{array} 
+\usepackage{hyperref}
+\begin{document}
+\input{pagedegarde}
+
+
+\title{Résumé de l'actualité}
+
+
+\datedebut{10 Mai 2025}
+\datefin{21 Mai 2025}
+
+
+\membrea{Mathis Petit 44004382}
+\membreb{Titouan Fegyveres 44009078}
+\membrec{Léo Alliot.G 44005123}
+\membred{Rémi Frydman 44012093}
+
+
+
+
+\pagedegarde
+\section*{Remerciements}
+Merci, merci à tous.
+\newpage
+
+\tableofcontents
+\newpage
+
+
+\section{Introduction}
+Étant tous plus ou moins intéressés par la politique et les actualités du monde qui nous entoure, nous avons décidé d’opter pour un projet qui puisse rendre la prise d’information sur le net (et les médias de journaux en ligne plus particulièrement) plus aisée et sûre.
+
+Nous le savons tous très bien, personne ne peut avoir d’opinion purement neutre et objective, et encore moins les médias : les articles sont rédigés par des humains, et comme tout humains, ces journalistes ont une vision de la société et du monde particulière, suivant souvent un courant politique plus ou moins spécifique. En effet, certains médias en ligne peuvent contenir des informations biaisées, interprétées par leur auteur ou autrice. C’est cette interprétation qui peut nuire au lecteur, ne disposant alors plus d’informations factuelles mais “pré interprétées” : c’est donc ici que nous voulons intervenir, avec l’aide de l’IA.
+
+Nous voulons aider les lecteurs de ces médias à cerner les opinions/penchants politiques de certains journalistes, afin qu’ils puissent disposer d’une information plus factuelle, et d’améliorer/faciliter le développement de leur esprit critique.
+
+
+
+
+\section{Description du projet et objectifs}
+	Pour répondre à ces enjeux de transparence et de pluralité de l’information, nous avons imaginé un outil capable d’automatiser la création d’une revue de presse comparative à partir d’articles publiés en ligne. L’idée est simple : plutôt que de consulter plusieurs sites à la main, de lire des dizaines d’articles et d’essayer de comparer les points de vue nous-mêmes, nous avons voulu créer un système qui fasse tout cela automatiquement, de façon rapide et fiable.
+Concrètement, notre objectif est de construire une chaîne automatisée, qui va suivre trois grandes étapes :\\
+
+ - Récupérer des articles du même sujet, en s’adaptant à chaque site (via une API si elle existe, un flux RSS, ou directement en analysant la page si nécessaire).\\
+
+
+ - Organiser et stocker ces articles dans un format clair et homogène, pour qu’ils puissent ensuite être facilement traités.\\
+
+
+ - Comparer les articles traitant du même sujet, et en produire automatiquement une synthèse, un résumé des différents points de vue exprimés.\\
+
+
+Une fois le système lancé, il fait le travail tout seul : il va chercher les articles, les range correctement, et fabrique un résumé qui permet de voir rapidement ce que chaque média dit sur un même sujet. Ça permet de gagner du temps, mais surtout d’avoir une vision plus complète et plus neutre de l’actu. On peut repérer les différences entre les sources, voir qui insiste sur quoi, et éviter de se faire une opinion basée sur un seul point de vue. Notre objectif est donc de créer un outil pour aider à mieux s’informer, et à garder un esprit critique face à ce qu’on lit, peu importe la semblance de transparence et de neutralité de nos sources habituelles. 
+
+
+\section{Bibliothèques, Outils et technologies}
+\subsection{Bibliothèques}
+Pour développer notre projet, nous avons utilisé plusieurs bibliothèques Python, à la fois standards et externes. Du côté des bibliothèques intégrées à Python, nous avons eu recours à os, json, argparse, time, datetime, collections (avec defaultdict), pathlib, subprocess, re, email.utils (avec parsedate-to-datetime) et urllib.parse (urljoin). Ces modules nous ont permis de gérer les fichiers, les dates, les chemins, les paramètres, ou encore de faire des recherches textuelles.
+
+Concernant les bibliothèques externes (à installer avec pip), nous avons utilisé feedparser pour lire les flux RSS, requests pour récupérer le contenu des pages web, beautifulsoup4 pour analyser le HTML, et ollama pour interagir avec un modèle de génération de texte via API. Ces outils ont été essentiels au bon fonctionnement de notre chaîne de traitement automatisée.
+\subsection{outils et technologies}
+
+Dans ce projet, nous étions tenus d’utiliser une intelligence artificielle comme aide au développement, et c’est donc avec ChatGPT que nous avons travaillé tout au long de la réalisation. Concrètement, l’IA nous a accompagnés dès les premières réflexions sur le projet. Elle nous a permis de clarifier notre objectif quand celui-ci était encore flou, en nous proposant des pistes, des idées de thèmes à traiter, et en nous aidant à formuler une problématique concrète.\\
+
+Ensuite, tout au long du développement, ChatGPT nous a énormément servis pour structurer notre travail, comprendre certaines notions techniques que nous n’avions pas vues en cours, et découvrir de nouvelles façons de faire. Par exemple, elle nous a suggéré de découper notre code en plusieurs scripts selon les fonctions (récupération des articles, génération des revues, etc.), de travailler avec certaines bibliothèques Python comme BeautifulSoup ou argparse, ou encore d’utiliser un format JSON propre pour stocker les résultats.\\
+
+Quand on rencontrait des erreurs ou des limites techniques (comme le modèle mistral qui ne passait pas sur notre machine), l’IA nous orientait vers des alternatives comme gemma:2b. Elle nous a également aidés à corriger des problèmes dans notre code : formats de fichiers mal enregistrés, boucles incorrectes, etc.\\
+
+Mais au-delà de l’aspect technique, elle nous a permis d’apprendre plein de choses qu’on n’aurait jamais vues autrement. On a été exposés à des concepts nouveaux, à du vocabulaire qu’on ne connaissait pas, à des outils en ligne, des bibliothèques logicielles, des manières de programmer plus claires ou plus modulaires. Même pour des choses comme la rédaction du rapport en LaTeX, ou l’utilisation d’Overleaf, ChatGPT nous a été utile pour comprendre le fonctionnement du template et pour l’adapter à nos besoins.\\
+
+Notre code final suit une structure assez logique : chargement des articles en JSON, regroupement par similarité (d’abord simplement par titres), interrogation d’un modèle de langage pour générer des synthèses et des comparatifs, puis sauvegarde du tout dans un fichier press-review.json. Cette structure a été construite pas à pas avec l’aide de l’IA, qui nous proposait une logique claire et des solutions à nos problèmes au fur et à mesure.\\
+
+En résumé, même si l’IA ne faisait pas le travail à notre place, elle a été un vrai appui : elle nous a guidés, débloqués, appris beaucoup de choses, et nous a permis de pousser le projet plus loin que ce qu’on aurait fait seuls.\\
+
+
+\section{Travail réalisé}
+-              Objectif de base : 
+L’objectif initial était de réaliser un site web entièrement automatisé a été déployé pour transformer des articles en ligne en une revue de presse comparative, sans intervention manuelle une fois le système lancé. Le dispositif s'articule autour de trois modules ­– collecte, stockage et synthèse – qui se relaient pour assurer la fluidité de bout en bout.\\
+
+-              Résultat final : 
+Nous avons généré un code, avec une assistance constante de l’IA (chat-GPT) qui est composé de trois modules : collecte, stockage, synthèse. Ce code génère une liste de 5 articles par sites internet (Le Monde, Le Figaro, …) dont les thèmes sont ressortis.\\ 
+
+-              Fonctionnalité pas réalisée : 
+Site web.
+ Pourquoi ?  manque de temps pour apprendre le langage HTML de manière minimale (même avec l’IA).\\
+Le comparatif d’opinion + une vraie revue de presse 
+ Pourquoi ? : dans le code, l’IA utilisée est installée en local, or en raison d’un manque de RAM dans l’ordinateur qui l’a généré, l’IA n’est pas très puissante donc pas assez précise sur les émotions et sur la qualité de la compréhension du script\\
+
+- Répartition : 
+Rémi s’est chargé du compte rendu, a aidé léo pour le début du code et a participé aux décisions importantes concernant la tournure du projet.  
+Léo avait la charge de l’exécution du code ainsi que de l’uniformité des codes générés à l’aide de l’IA. 
+Mathis a pris en charge la gestion des deadline et la coordination au sein du groupe.
+Titouan avait la charge de générer une partie importante du code et de dégrossir les connaissances pour que l’exécution du code par Léo se fasse au mieux.\\
+ 
+-              Description du travail:  
+Un pipeline éditorial entièrement automatisé a été déployé pour transformer des articles en ligne en une revue de presse comparative, sans intervention manuelle une fois le système lancé. Le dispositif s’articule autour de trois modules ­– collecte, stockage et synthèse – qui se relaient pour assurer la fluidité de bout en bout.\\
+
+Le premier module se charge de la collecte. À partir d’une URL donnée, il commence par vérifier si le domaine propose une API ; si c’est le cas, il l’interroge directement. Faute d’API, il explore la page à la recherche d’un flux RSS ou Atom et, lorsqu’il en trouve un, en extrait les cinq entrées les plus récentes. Si aucune API ni flux n’est disponible, il pratique un scraping HTML de secours, limité à dix articles, et uniquement si le fichier robots.txt n’interdit pas l’opération. Chaque article récupéré est immédiatement nettoyé : titre, lien, résumé et – si elle est disponible – date de publication sont isolés, tandis qu’un ensemble de garde-fous (blocs try/except, en-tête User-Agent) sécurise les requêtes réseau.\\
+
+Le deuxième module assure la normalisation et le stockage. Les champs des articles sont uniformisés dans un format unique : source, titre, URL, date de publication et texte. Les éléments ainsi homogénéisés en JSON au format UTF-8, sont ensuite enregistrés dans un fichier ou un dossier dédié. La structure du code prévoit déjà la possibilité de classer ces fichiers dans une arborescence chronologique du type data/AAAA-MM-JJ/<source>/, de sorte que l’archive reste claire et facile à parcourir.\\
+
+Une fois les articles rangés, le troisième module entre en scène pour la synthèse. Il commence par charger tous les fichiers JSON d’un dossier, puis regroupe ceux qui portent exactement le même titre ; chaque groupe constitue un “cluster” de documents traitant du même sujet.\\
+
+
+Pour chaque cluster, le module bâtit un prompt adressé au modèle de langage : la consigne demande d’abord une revue de presse synthétique, limitée à deux mille mots, puis un comparatif de points de vue présenté sous forme de tableau ou de puces. La réponse du modèle est enregistrée dans un fichier press.review.json, où figurent l’identifiant du cluster, le sujet, la liste des sources consultées et la revue complète. Afin de respecter le quota d’appels, une courte pause est introduite entre chaque requête au modèle.\\
+
+Ainsi, la chaîne “collecte → stockage → synthèse” fonctionne désormais de manière fluide : elle détecte la meilleure porte d’entrée vers chaque site, extrait et nettoie les informations utiles, les consigne dans un format uniforme, puis en tire une synthèse journalistique comparée prête à être exploitée.\\
+
+
+
+
+\section{Difficultés rencontrées}
+Ce projet nous a posé beaucoup de problème aux différentes étapes de celui-ci.
+
+Début : trouver une idée, car oui, partir de rien ce n’est pas si facile, alors plusieurs idées se sont présentées à nous, mais grâce à des discussions avec Chat-GPT nous avons finalement trouvé l’idée de ce projet
+
+Milieu : il a ensuite fallu comprendre et s’approprier les notions les plus importantes de notre projet (scraping, flux RSS), ainsi que des nouvelles notions informatiques telles que l’arborescence permettant d’exécuter le code.
+
+Exécution : cette partie a sans doute été la plus difficile car elle nous a demandé de regrouper l’ensemble des 3 modules de manière homogène ainsi que la nécessité d’installer un LLM en local (ici ollama). Enfin, nous avons essayé que le fichier de retour soit dans un format texte mais nous n’avons pas réussi car la complexité du code a drastiquement augmenté.
+
+ 
+
+
+\section{Bilan, conclusion}
+	
+	\subsection{L’utilisation de l’IA}
+    L’IA est un outil extraordinaire, qui nous a permis de pondre un projet qui va bien au-delà de nos réelles capacités actuelles, mais cet outil a quand même ses limites que nous avons pu explorer au long du projet. Déjà, il faut avoir un minimum de connaissances de base sur le sujet attaqué pour pouvoir prendre assez de recul sur les réponses données, et être certain que la réponse donnée n’est pas hors sujet (ni même fausse). Ensuite, pour apprendre grâce à cet outil, il faut savoir lui donner des consignes très précises, afin qu’il nous aide à atteindre notre objectif, et non qu’il ne fasse tout à notre place. Enfin, il est quand même nécessaire de faire un comparatif entre les différentes IA disponibles sur le net, pour savoir laquelle est la plus compétente pour aller dans notre sens (efficacité, maîtrise et clarté du language informatique choisi, etc…).
+    \subsection{Le projet en lui même }
+    Nous sommes satisfaits du résultat auquel nous sommes arrivés, car comme dit précédemment, l’objectif de base était bien trop ambitieux vis-à-vis de nos compétences en informatique. Nous avons donc tout donné pour nous tenir au plan de base, et suite à de nombreux efforts, le résultat est presque celui qui était annoncé : nous n’avons pas fait le site internet ni le comparatif d’opinion, par manque de puissance dans nos ordinateurs, et aussi (et surtout) par manque de connaissances. Ce sont des compétences que nous trouvons très intéressantes à développer à l’avenir.  
+
+    \subsection{Ce que ce projet nous a appris}
+    Bien que le résultat espéré n’ait pas été atteint, ce projet nous à appris bien plus que toutes les connaissances en informatique et en gestion de l’intelligence artificielle, amassées durant les recherches, ainsi que durant la réalisation du code. En effet, nous n’avions jamais réalisé de projet aussi important et complexe, ce qui nous a fait fortement développer nos capacités d’entraide, de coordination et de travail avec l’autre. Nous avons dû organiser des lieux de rencontre durant la réalisation du projet, ainsi que d’utiliser des logiciels en ligne pour travailler à distance. Ce sont des compétences qui nous seront utiles durant toutes nos études, et que nous n’allons pas tarder à réutiliser. 
+
+    
+    \subsection{Perspectives} 
+
+- Le code ne retourne malheureusement pas une véritable revu de presse ainsi que le comparatif d’opinion souhaité mais il serait intéressant de le modifier afin qu’il retourne un résultat plus clair.
+
+- De plus, il serait intéressant de mettre tous ces résultats sur un site web complètement automatisé. 
+
+    \subsection{Utilisation quotidienne}  
+
+- Une revue de presse est un outil fondamentale pour de nombreuses personnes ainsi que de nombreuses profession, comme les étudiants et les professeurs ainsi que les politiciens ou encore les banquiers d’affaire qui ont besoin de revues d’actualité claires et précises afin de prendre les meilleurs décisions vis-à-vis de la conjoncture économique, social et politique de l’environnement dans lequel ils évoluent.
+
+ 
+	
+
+
+\newpage
+
+
+
+\newpage
+\section{Webographie}
+\begin{thebibliography}{2}
+\bibitem[CAT]{cat} \url{savoircoder.fr/cat}\\
+
+\bibitem[ChatGPT]{chatgpt} \url{https://chat.openai.com} \\
+
+
+\bibitem[VSCode]{vscode} \url{https://code.visualstudio.com} \\
+
+
+\bibitem[Ollama]{ollama} \url{https://ollama.com} \\
+
+\bibitem[LeMonde]{lemonde} \url{https://www.lemonde.fr} \\
+
+
+\bibitem[LeFigaro]{lefigaro} \url{https://www.lefigaro.fr} \\
+
+\bibitem[CNEWS]{cnews} \url{https://www.cnews.fr} \\
+
+
+\bibitem[FranceInfo]{franceinfo} \url{https://www.francetvinfo.fr} \\
+
+
+\bibitem[Libération]{liberation} \url{https://www.liberation.fr} \\
+\bibitem[Spyder]{spyder} \url{https://www.spyder-ide.org} \\
+
+\end{thebibliography}
+
+
+
+
+\end{thebibliography}
+
+
+\newpage
+\section{Annexes}
+\appendix
+\makeatletter
+\def\@seccntformat#1{Annexe~\csname the#1\endcsname:\quad}
+\makeatother
+	
+	\section{Exemple d'exécution du projet}
+	\includegraphics[width=\linewidth]{capture1.png}
+    Exemple complet d’execution du projet, la fonction "run" lance le scrappage des articles et permet la generation d’une revue de presse, tout cela grâce à des fichiers qui stockent les informations pour la revue.
+    
+    
+    
+    \includegraphics[width=\linewidth]{Capture2.png}
+    Quand on lance la récupération de données, voici l'affichage du scrappage.
+    
+    \includegraphics[width=\linewidth]{Capture3.png}
+    Après avoir lancé le code, il en sort une revue de presse enregistrée sous le nom article-date.JSON
+
+
+\end{document}
